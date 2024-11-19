@@ -9,6 +9,11 @@ a{
     text-decoration: none;
 }
 
+a:visited{
+    color: #F5F5DC;
+}
+
+
 .dynapuff-font {
     font-family: "DynaPuff", system-ui;
     font-style: normal;
@@ -25,13 +30,29 @@ header{
     justify-content: center;
     background-image: url(photos/liscie.png);
     overflow: hidden;
+    animation: scrollBackground 180s linear infinite;
 }
+@keyframes scrollBackground { 
+    0% { 
+        background-position: 0 0; 
+    } 
+    50%{
+        background-position: -25% 50%; 
+    }
+    100% { 
+        background-position: 0 0; 
+    } 
+}
+
+
 #logo{
     background-color: aliceblue;
     border-radius: 100%;
     filter: drop-shadow(2px 2px 2px #4B371C);
     width: 8rem;
     height: 8rem;
+    flex-shrink: 0;
+
 }
 #logo img{
     height: 8rem;
@@ -43,20 +64,22 @@ header{
     display: flex;
     align-items: center;
     text-shadow: 2px 2px 2px black;
+    transition: ease-in;
 }
+#logo-napis:hover{
+    transform: scale(1.1);
+}
+
+
 #logo-napis a{
     text-decoration: none;
 }
 
 
-
-a:visited{
-    color: #F5F5DC;
-}
-
 #navbar{
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 #navbar ul{
@@ -89,6 +112,34 @@ a:visited{
     border-bottom: 5px solid #694528c4;
 }
 
+
+#container{
+    background-color: #F5F5DC;
+    width: 100%;
+    display: flex;
+}
+#gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#gallery img{
+    height: 10rem;
+    margin: 1rem;
+    border-image: url(photos/border-kosz.jpg);
+    border-width: 5px;
+    border-style: solid;
+    border-image-slice: 5;
+    border-image-width: 5px;
+    border-image-repeat: stretch;
+    transition: linear;
+}
+
+#gallery img:hover{
+    transform: scale(1.1);
+    filter: brightness(1.1);
+    filter: drop-shadow(0 0 10px black);
+}
 
 footer{
     text-transform: uppercase;
