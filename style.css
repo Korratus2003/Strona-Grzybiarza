@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #F5F5DC;
+}
+
+a{
+    text-decoration: none;
+}
+
+.dynapuff-font {
+    font-family: "DynaPuff", system-ui;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+
+header{
+    padding: 1rem;
+    background-color: #556B2F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(photos/liscie.png);
+    overflow: hidden;
+}
+#logo{
+    background-color: aliceblue;
+    border-radius: 100%;
+    filter: drop-shadow(2px 2px 2px #4B371C);
+    width: 8rem;
+    height: 8rem;
+}
+#logo img{
+    height: 8rem;
+    aspect-ratio: 1;
+}
+#logo-napis{
+    margin-left: 2rem;
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 2px black;
+}
+#logo-napis a{
+    text-decoration: none;
+}
+
+
+
+a:visited{
+    color: #F5F5DC;
+}
+
+#navbar{
+    position: sticky;
+    top: 0;
+}
+
+#navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(171,112,64);
+    background: linear-gradient(148deg, rgba(171,112,64,1) 23%, rgba(217,145,86,1) 100%);
+    overflow: hidden;
+    height: 4rem;
+}
+
+#navbar ul li{
+    list-style: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
+
+#navbar ul li a{
+    padding: 1rem;
+}
+
+#navbar ul li a:hover{
+    background-color: #d99156;
+    color: white;
+}
+
+#active{
+    border-bottom: 5px solid #694528c4;
+}
+
+
+footer{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: #4B371C;
+    text-align: center;
+    padding: 1% 0;
+    text-shadow: 1px 1px 1px black;
+}
+footer em{
+    font-size: x-large;
+    color: rgb(255, 165, 91);
+}
