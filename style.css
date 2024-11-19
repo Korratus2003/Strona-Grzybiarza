@@ -20,7 +20,13 @@ a:visited{
     font-variation-settings:
       "wdth" 100;
   }
-
+h1{
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 2rem;
+    font-size: xx-large;
+}
 
 header{
     padding: 1rem;
@@ -28,6 +34,7 @@ header{
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-image: url(photos/liscie.png);
     overflow: hidden;
     animation: scrollBackground 180s linear infinite;
@@ -58,6 +65,11 @@ header{
     height: 8rem;
     aspect-ratio: 1;
 }
+
+#hamburger-menu{
+    display: none;
+}
+
 #logo-napis{
     margin-left: 2rem;
     font-size: 4rem;
@@ -153,4 +165,88 @@ footer{
 footer em{
     font-size: x-large;
     color: rgb(255, 165, 91);
+}
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    #logo{
+        display: none;
+    }
+
+    #logo-napis{
+        font-size: 300%;
+    }
+
+    #navbar{
+        display: none;
+    }
+
+    #hamburger-menu{
+        display: flex;
+        width: 5rem;
+        height: 5rem;
+        aspect-ratio: 1;
+        background: #d99156;
+        border-radius: 0.5rem;
+        background-image: url(icons/menu.svg);
+        background-size: 100%;
+        border: 5px solid #4B371C;
+    }
+    #hamburger-menu ul{
+        display: none;
+        text-transform: uppercase;
+    }
+
+    #hamburger-menu:hover > ul{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 100vh;
+        flex-direction: column;
+        background: rgb(171,112,64);
+        background: linear-gradient(148deg, rgba(171,112,64,1) 23%, rgba(217,145,86,1) 100%);
+        display: block;
+        justify-content: center;
+
+    }
+    #hamburger-menu ul li{
+        text-align: center;
+        margin: 2em;
+        list-style: none;
+    }
+
+    #hamburger-menu ul li a{
+        padding: 1rem;
+        display: inline-block;
+        width: 50%;
+    }
+
+    #hamburger-menu ul li a:hover{
+        background-color: #97643a;
+        color: white;
+        transform: scale(1.4);
+    }
+
+}
+
+
+
+@media (max-width: 400px) {
+    #logo-napis{
+        font-size: 200%;
+    }
+
+    #hamburger-menu ul li a{
+        display: inline-block;
+        font-size: 0.6rem;
+        width: 20%;
+    }
+
 }
