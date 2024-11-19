@@ -120,7 +120,7 @@ header{
     color: white;
 }
 
-#active{
+.active{
     border-bottom: 5px solid #694528c4;
 }
 
@@ -242,11 +242,4 @@ footer em{
     #logo-napis{
         font-size: 200%;
     }
-
-    #hamburger-menu ul li a{
-        display: inline-block;
-        font-size: 0.6rem;
-        width: 20%;
-    }
-
 }
