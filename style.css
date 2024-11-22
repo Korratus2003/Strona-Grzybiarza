@@ -129,6 +129,7 @@ header{
     background-color: #F5F5DC;
     width: 100%;
     display: flex;
+    justify-content: center;
 }
 #gallery{
     display: flex;
@@ -153,6 +154,7 @@ header{
     filter: drop-shadow(0 0 10px black);
 }
 
+
 footer{
     text-transform: uppercase;
     font-weight: bold;
@@ -169,9 +171,19 @@ footer em{
 
 
 
+section{
+    max-width: 50%;
+    text-align: center;
+}
 
-
-
+section img {
+    width: 50%;
+}
+article{
+    color: black;
+    font-size: 1.5rem;
+    text-align: justify;
+}
 
 
 @media (max-width: 800px) {
@@ -181,6 +193,17 @@ footer em{
 
     #logo-napis{
         font-size: 300%;
+    }
+
+
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+    }
+    body{
+        margin-top: 8rem;
     }
 
     #navbar{
@@ -204,9 +227,10 @@ footer em{
     }
 
     #hamburger-menu:hover > ul{
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
+        z-index: 1000;
         width: 70vw;
         height: 100vh;
         flex-direction: column;
@@ -233,6 +257,12 @@ footer em{
         color: white;
         transform: scale(1.4);
     }
+    h1{
+        font-size: 2rem;
+    }
+    section{
+        max-width: 90%;
+    }
 
 }
 
@@ -241,5 +271,11 @@ footer em{
 @media (max-width: 400px) {
     #logo-napis{
         font-size: 200%;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    article{
+        font-size: 1rem;
     }
 }
