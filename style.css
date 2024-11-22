@@ -5,6 +5,10 @@
     color: #F5F5DC;
 }
 
+article *{
+    color: black;
+}
+
 a{
     text-decoration: none;
 }
@@ -132,6 +136,7 @@ header{
     justify-content: center;
 }
 #gallery{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -169,35 +174,66 @@ footer em{
     color: rgb(255, 165, 91);
 }
 
+.galery-section{
+    width: 100%;
+}
 
 
-section{
+.normal-section{
     max-width: 50%;
     text-align: center;
     padding: 2rem;
 }
 
-section img {
+.normal-section article img {
     width: 50%;
     margin: 5rem 0;
     filter: drop-shadow(2px 2px 2px black);
 }
 
-section img:hover{
+.normal-section article img:hover{
     transform: scale(1.1);
     filter: brightness(1.1);
     transition: 0.5s ease-in-out;
 }
 
+.center-img{
+    text-align: center;
+}
 article{
     color: black;
     font-size: 1.5rem;
     text-align: justify;
 }
 
+.read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #2e8b57;
+    text-decoration: none;
+    width: 100%;
+    text-align: right;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+    color: #006400;
+}
+
+.read-more:visited{
+    color: #97643a;
+}
+
+.square{
+    background-color: aliceblue;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    filter: drop-shadow(2px 2px 2px black);
+}
 
 @media (max-width: 1000px) {
-    section{
+    .normal-section{
         max-width: 70%;
     }
 
@@ -273,7 +309,7 @@ article{
     h1{
         font-size: 2rem;
     }
-    section{
+    .normal-section{
         max-width: 90%;
         margin-top: 8rem;
     }
@@ -289,7 +325,14 @@ article{
     h1{
         font-size: 1rem;
     }
+    h2{
+        font-size: 0.6rem;
+    }
     article{
         font-size: 1rem;
     }
+    .normal-section article img{
+        width: 80%;
+    }
+
 }
