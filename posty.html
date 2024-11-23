@@ -48,56 +48,78 @@
     </nav>
     <div id="container">
         <section class="normal-section">
-            <h1 class="dynapuff-font">Wybrane dla ciebie</h1>
+            <!-- Sekcja dodawania posta -->
+            <div class="add-post">
+                <h2>Dodaj nowy post</h2>
+                <div class="user-info">
+                    <img src="users-profiles-photos/michalina.jpg" alt="Zdjęcie użytkownika" class="user-photo">
+                    <p>Michalina, 53 lata - Nowa w świecie grzybów</p>
+                </div>
+                <p>Podziel się swoimi doświadczeniami z grzybobrania!</p>
+                <form class="post-form" action="#" method="post" enctype="multipart/form-data">
+                    <label for="post-image">Dodaj zdjęcie koszyka:</label>
+                    <input type="file" id="post-image" name="post-image" accept="image/*">
+                    
+                    <label for="post-content">Opisz swoje znaleziska:</label>
+                    <textarea id="post-content" name="post-content" placeholder="Wpisz treść swojego posta..."></textarea>
+                    
+                    <button type="submit">Opublikuj post</button>
+                </form>
+            </div>
+            
+            <h1>Posty wybrane dla ciebie</h1>
 
             <!-- Post 1 -->
-            <article class="post">
+            <div class="post">
                 <div class="post-header">
                     <div class="user-info">
-                        <img src="photos/older-woman.jpg" alt="Zdjęcie użytkownika" class="user-photo">
+                        <img src="users-profiles-photos/anna.jpg" alt = "Zdjęcie użytkownika" class="user-photo">
                         <p><strong>Anna, 72 lata</strong> - Grzybiarka z lasów Podlasia</p>
                     </div>
                 </div>
                 <div class="post-content">
                     <div class="post-img">
-                        <img src="photos/anna-grzyby.jpg" alt="Kosz z grzybami">
+                        <img src="photos/kosz_grzybow_24t5135.jpg" alt="Kosz z grzybami">
                     </div>
                     <p>Wczoraj udało mi się zebrać piękny kosz borowików! W lesie było cicho, spokojnie, aż chciało się zostać tam na dłużej. Po drodze natrafiłam też na kilka kurek, które od razu trafiły do mojego koszyka. <br> Cieszę się, że grzyby rosną tak obficie w tym roku. A Wy, jakie grzyby znaleźliście w ostatnich dniach?</p>
                 </div>
-            </article>
+            </div>
 
             <!-- Post 2 -->
-            <article class="post">
+            <div class="post">
                 <div class="post-header">
                     <div class="user-info">
-                        <img src="photos/old-man.jpg" alt="Zdjęcie użytkownika" class="user-photo">
+                        <img src="users-profiles-photos/marek.jpg " alt= "Zdjęcie użytkownika" class="user-photo">
                         <p><strong>Marek, 68 lat</strong> - Doświadczony grzybiarz</p>
                     </div>
                 </div>
                 <div class="post-content">
                     <div class="post-img">
-                        <img src="photos/marek-grzyby.jpg" alt="Grzyby w lesie">
+                        <img src="photos/kosz_grzybow_762471.jpg" alt="Grzyby w lesie">
                     </div>
                     <p>Oto kilka pięknych prawdziwków, które zebrałem wczoraj w okolicach Bieszczad. Tego typu grzyby można znaleźć tylko w określonych miejscach, więc wiem, gdzie ich szukać. W tym sezonie jest ich sporo, ale trzeba uważać, by nie pomylić z innymi gatunkami. Zbierajcie grzyby tylko wtedy, gdy jesteście pewni ich bezpieczeństwa!</p>
                 </div>
-            </article>
+            </div>
 
             <!-- Post 3 -->
-            <article class="post">
+            <div class="post">
                 <div class="post-header">
                     <div class="user-info">
-                        <img src="photos/granny.jpg" alt="Zdjęcie użytkownika" class="user-photo">
+                        <img src="users-profiles-photos/zofia.jpg" alt="Zdjęcie użytkownika" class="user-photo">
                         <p><strong>Zofia, 80 lat</strong> - Pasjonatka grzybobrania</p>
                     </div>
                 </div>
                 <div class="post-content">
                     <div class="post-img">
-                        <img src="photos/zofia-grzyby.jpg" alt="Grzyby w koszu">
+                        <img src="photos/kanie.jpg" alt="Grzyby w koszu">
                     </div>
-                    <p>Właśnie wróciłam z mojej ulubionej leśnej ścieżki. Mam pełen koszyk grzybów, w tym kilka rzadkich gatunków, które udało mi się znaleźć. Grzybobranie to dla mnie nie tylko hobby, ale także sposób na relaks i kontakt z naturą. Zawsze zabieram ze sobą termos z herbatą, żeby się rozgrzać. W tym roku grzyby wyjątkowo obficie rosną, a Wy jak się czujecie po leśnych wyprawach?</p>
+                    <p>Właśnie wróciłam z mojej ulubionej leśnej ścieżki. Mam pełen koszyk grzybów, w tym kilka rzadkich gatunków, które udało mi się znaleźć. Najbardziej dumna jestem z czubajek które widać na zdjęciu. Grzybobranie to dla mnie nie tylko hobby, ale także sposób na relaks i kontakt z naturą. Zawsze zabieram ze sobą termos z herbatą, żeby się rozgrzać. W tym roku grzyby wyjątkowo obficie rosną, a Wy jak się czujecie po leśnych wyprawach?</p>
                 </div>
-            </article>
-
+            </div>
+            <!--Oczywiście normalnie wszystko to byłoby pobierane z bazy danych, ja zostawię 3 posty-->
+            <div class="post">
+                <h2>Niestety doszedłeś do końca naszych postów, nie mamy aktualnie więcej!!!!</h2>
+            </div>
         </section>
     </div>
     <footer>
