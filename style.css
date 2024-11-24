@@ -78,6 +78,9 @@ header{
 #hamburger-menu{
     display: none;
 }
+#burger-icon{
+    display: none;
+}
 
 #logo-napis{
     margin-left: 2rem;
@@ -483,50 +486,67 @@ form {
     #navbar{
         display: none;
     }
-
+    
     #hamburger-menu{
-        display: flex;
-        width: 5rem;
-        height: 5rem;
-        aspect-ratio: 1;
-        background: #d99156;
-        border-radius: 0.5rem;
-        background-image: url(icons/menu.svg);
-        background-size: 100%;
-        border: 5px solid #4B371C;
-    }
-    #hamburger-menu ul{
         display: none;
         text-transform: uppercase;
     }
+    #burger-icon{
+        display: block;
+        appearance: none;
+        cursor: pointer;
+    }
 
-    #hamburger-menu:hover > ul{
+    #burger-icon::before{
+        display: flex;
+        content: "☰";
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        width: 2.5rem;
+        aspect-ratio: 1;
+        background-color: #d99156;
+        padding: 0.5rem;
+        border: 2px solid #97643a;
+        border-radius: .7rem;
+
+    }
+    #burger-icon:is(:checked) ~ #hamburger-menu{
+        display: flex;
+        flex-direction: column;
         position: fixed;
         top: 0;
         left: 0;
+        background: linear-gradient(148deg, rgba(171, 112, 64, 1) 23%, rgba(217, 145, 86, 1) 100%);;
+        width: 70%;
+        height: 100%;
         z-index: 1000;
-        width: 70vw;
-        height: 100vh;
-        flex-direction: column;
-        background: rgb(171,112,64);
-        background: linear-gradient(148deg, rgba(171,112,64,1) 23%, rgba(217,145,86,1) 100%);
-        display: block;
-        justify-content: center;
-
     }
-    #hamburger-menu ul li{
+
+    #burger-icon:is(:checked)::before{
+        content: "✕";
+        position: fixed;
+        bottom: 2rem;
+        left: calc(35% - 1.25rem);
+        z-index: 1001;
+        background: none;
+        border: none;
+    }
+
+    #hamburger-menu li{
         text-align: center;
-        margin: 2em;
+        margin: 1em;
         list-style: none;
     }
 
-    #hamburger-menu ul li a{
-        padding: 1rem;
+    #hamburger-menu li a{
+        padding: 0.8rem;
         display: inline-block;
         width: 50%;
     }
 
-    #hamburger-menu ul li a:hover{
+    #hamburger-menu li a:hover{
         background-color: #97643a;
         color: white;
         transform: scale(1.4);
