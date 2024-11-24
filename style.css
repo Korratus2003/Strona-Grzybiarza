@@ -104,6 +104,8 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-bottom: 2px solid #97643a;
+    filter: drop-shadow(1px 1px 2px black);
 }
 
 #navbar ul{
@@ -212,7 +214,7 @@ footer em{
 article{
     color: black;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: left;
     border-radius: 2rem;
 }
 
@@ -307,6 +309,7 @@ article{
 .post-content p {
     margin: 0;
     color: black;
+    text-align: left;
 }
 
 .add-post {
@@ -480,6 +483,8 @@ form {
         top: 0;
         left: 0;
         z-index: 900;
+        min-height: 6rem;
+        border-bottom: 2px solid #006400;
     }
 
     #navbar{
@@ -511,6 +516,11 @@ form {
         border-radius: .7rem;
 
     }
+    #burger-icon:is(:checked)::after{
+        display: block;
+        content: " ";
+        width: 3.75rem;
+    }
     #burger-icon:is(:checked) ~ #hamburger-menu{
         display: flex;
         flex-direction: column;
@@ -535,8 +545,8 @@ form {
 
     #hamburger-menu li{
         text-align: center;
-        margin: 1em;
         list-style: none;
+        margin-top: 2rem;
     }
 
     #hamburger-menu li a{
