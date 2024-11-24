@@ -191,7 +191,7 @@ footer em{
 }
 .center-img img {
     width: 90%;
-    margin: 5rem 0;
+    margin: 1rem 0 2rem 0;
     filter: drop-shadow(2px 2px 2px black);
     border-radius: 2rem;
 }
@@ -332,20 +332,6 @@ article{
     text-align: center;
 }
 
-.user-info {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.user-photo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ccc;
-}
 
 .user-info p {
     margin: 0;
@@ -438,6 +424,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
+    color: black;
 }
 
 .form-field textarea {
@@ -469,7 +456,7 @@ form {
 
 
 
-
+/*responsywność*/
 @media (max-width: 1000px) {
     .normal-section{
         max-width: 70%;
@@ -549,12 +536,17 @@ form {
         margin-top: 8rem;
         padding: 0;
     }
+    .galery-section{
+        margin-top: 8rem;
+    }
     .square{
         width: 100%;
         padding: 1rem;
         padding: 2rem;
     }
-
+    .normal-section form{
+        margin: 2rem;
+    }
 }
 
 
@@ -564,7 +556,10 @@ form {
         font-size: 200%;
     }
     article{
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+    h2{
+        font-size: 1.2rem;
     }
     .square{
         padding: 1rem;
@@ -575,5 +570,6 @@ form {
     .normal-section{
         width: 100%;
     }
+    
 
 }
