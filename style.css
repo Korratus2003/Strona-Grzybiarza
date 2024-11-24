@@ -464,7 +464,6 @@ form {
     .normal-section{
         max-width: 70%;
     }
-
 }    
 @media (max-width: 800px) {
     #logo{
@@ -472,7 +471,7 @@ form {
     }
 
     #logo-napis{
-        font-size: 300%;
+        font-size: 6vw;
     }
 
 
@@ -572,9 +571,6 @@ form {
 
 
 @media (max-width: 400px) {
-    #logo-napis{
-        font-size: 200%;
-    }
     article{
         font-size: 0.9rem;
     }
